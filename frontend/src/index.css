@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@keyframes letterFlow {
+	0%,
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(-4px);
+	}
+}
+
+.hero-animated-title {
+	display: inline-block;
+}
+
+.hero-word {
+	display: inline-block;
+	margin-right: 0.35ch;
+	white-space: nowrap;
+}
+
+.hero-char {
+	display: inline-block;
+	opacity: 1;
+	animation: letterFlow 8s ease-in-out infinite;
+	will-change: transform;
+}
+
+.hero-char-accent {
+	color: #3b82f6;
+}
