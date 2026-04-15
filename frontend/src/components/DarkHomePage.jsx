@@ -147,7 +147,7 @@ const DarkHomePage = ({ setCurrentPage }) => {
 						)}
 
 						{activeTab === 'process' && (
-							<div className="grid gap-6 lg:grid-cols-2">
+							<div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
 								{/* Left: Process Details */}
 								<div>
 									<h3 className="mb-6 text-2xl font-bold text-white">Process</h3>
@@ -175,14 +175,14 @@ const DarkHomePage = ({ setCurrentPage }) => {
 
 								{/* Right: Status Logs */}
 								<div>
-									<div className="rounded-lg border border-slate-700 bg-slate-950 p-4">
+									<div className="min-h-96 rounded-xl border border-slate-700 bg-slate-950 p-7">
 										<div className="mb-4 flex items-center gap-2">
 											<span className="inline-block h-3 w-3 rounded-full bg-red-500"></span>
 											<span className="inline-block h-3 w-3 rounded-full bg-yellow-500"></span>
 											<span className="inline-block h-3 w-3 rounded-full bg-green-500"></span>
 											<span className="ml-auto text-xs font-semibold text-slate-500 uppercase">Status Logs</span>
 										</div>
-										<div className="space-y-2 text-sm font-mono text-green-400">
+										<div className="space-y-3 text-base font-mono text-green-400">
 											<p>{'>'} Booting agent runtime...</p>
 											<p>{'>'} Mission target: AI Stock Analysis</p>
 											<p>{'>'} Building execution plan...</p>
